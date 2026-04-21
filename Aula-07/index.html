@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Listas e Tabelas em HTML</title>
+  <style>
+    body{font-family:Arial,sans-serif;margin:20px;background:#fff;color:#000}
+    h1,h2,h3{margin:0 0 8px}
+    section{border:1px solid #000;padding:10px;margin-bottom:10px}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    ul{list-style:none;margin:0;padding:0}
+    table{width:100%;border-collapse:collapse}
+    th,td{border:1px solid #000;padding:6px;vertical-align:top}
+    @media (max-width:700px){.grid{grid-template-columns:repeat(2,1fr)}table{display:block;overflow:auto;white-space:nowrap}}
+  </style>
+</head>
+<body>
+  <h1>Listas e Tabelas em HTML</h1>
+  <section>
+    <h2>Listas com tabelas</h2>
+    <div class="grid">
+      <div><h3>NES</h3
+        ><ul><li>Mario Bros 3</li>
+            <li>Mario Lost Levels</li>
+            <li>Pokemon Emerald (GBA)</li>
+            <li>Fire Emblem Awakening (NDS)</li>
+            <li>Super Mario 64 (N64)</li>
+            <li>Super Smash Bros. Ultimate (Switch)</li>
+            <li>Metroid Prime (GameCube)</li></ul></div>
+      <div><h3>SNES</h3><ul><li>Super Mario RPG</li><li>The Legend of Zelda: A Link to the Past</li><li>Super Metroid</li><li>Mega Man X</li><li>Kirby Super Star</li><li>Star Fox</li></ul></div>
+      <div><h3>PlayStation</h3>
+        <ul><li>PSOne: Ridge Racer, Metal Gear Solid</li><li>PS2: GTA III, GTA San Andreas, God of War</li>
+            <li>tomb raider</li>
+            <li>PS3: LittleBigPlanet, Uncharted 2, The Last of Us</li><li>PS4: Uncharted 4, Titanfall 2, God of War</li><li>PS5: Spider-Man: Miles Morales, Demon's Souls, God of War Ragnarok</li></ul></div>
+
+      <div><h3>Xbox</h3><ul><li>007</li><li>FIFA World Cup</li><li>A Kingdom for Keflings</li><li>Forza Horizon</li><li>Halo 3</li></ul></div>
+    </div>
+  </section>
+  <table>
+    <thead>
+      <tr><th rowspan="2">NES</th><th rowspan="2">SNES</th><th colspan="5">Meus Jogos Favoritos</th><th rowspan="2">Xbox</th></tr>
+      <tr><th>PSOne</th><th>PS2</th><th>PS3</th><th>PS4</th><th>PS5</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><ul><li>Mario Bros 3</li><li>Mario Lost Levels</li><li>Pokemon Emerald</li><li>Fire Emblem Awakening</li><li>Super Mario 64</li><li>Smash Bros. Ultimate</li></ul></td>
+        <td><ul><li>Super Mario RPG</li><li>Zelda: A Link to the Past</li><li>Super Metroid</li><li>Mega Man X</li><li>Kirby Super Star</li><li>Star Fox</li></ul></td>
+        <td><ul><li>Ridge Racer</li><li>Tomb Raider</li><li>Metal Gear Solid</li></ul></td>
+        <td><ul><li>GTA III</li><li>GTA San Andreas</li><li>God of War</li></ul></td>
+        <td><ul><li>LittleBigPlanet</li><li>Uncharted 2</li><li>The Last of Us</li></ul></td>
+        <td><ul><li>Uncharted 4</li><li>Titanfall 2</li><li>God of War</li></ul></td>
+        <td><ul><li>Spider-Man: Miles Morales</li><li>Demon's Souls</li><li>God of War Ragnarok</li></ul></td>
+        <td><ul><li>007</li><li>FIFA World Cup</li><li>A Kingdom for Keflings</li><li>Forza Horizon</li><li>Halo 3</li></ul></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
